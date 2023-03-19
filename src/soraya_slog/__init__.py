@@ -28,7 +28,7 @@ def log(severity: str, message: str, data: object = None) -> None:
     print(f'{{'
           f' "timestamp": "{__get_timestamp()}",'
           f' "severity": "{LOG_SEVERITY_CRITICAL}",'
-          f' "message": "Error while attempting to log message: {str(e)}",'
+          f' "message": "Error while attempting to log message: {str(e)}" '
           f'}}')
 
 def debug(message: str, data: object = None) -> None:
